@@ -7,6 +7,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		background-color: aqua;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -69,6 +70,25 @@
 	}
 }
 
+// Menu burger
+.menu-toggle {
+	padding: 0;
+	border: 1px solid black;
+	transition: transform 0.3s;
+	transform: scale(100%);
+}
+.menu-toggle:hover {
+	background-color: grey;
+	border: 1px solid black;
+}
+
+.main-navigation.toggled .menu-toggle
+{
+	background-color: grey;
+	border: 1px solid black;
+	transform: scale(75%);
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -83,6 +103,8 @@
 
 	.main-navigation ul {
 		display: flex;
+		height: 2rem;
+		justify-content: space-around;
 	}
 }
 

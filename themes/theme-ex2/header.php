@@ -41,12 +41,12 @@
 			$theme_ex2_description = get_bloginfo( 'description', 'display' );
 			if ( $theme_ex2_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $theme_ex2_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'theme-ex2' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32"></button>
 			<?php
 			wp_nav_menu(
 				array(
