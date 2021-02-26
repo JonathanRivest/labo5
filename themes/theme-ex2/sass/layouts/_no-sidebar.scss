@@ -10,3 +10,24 @@
 			"footer";
 	}
 }
+
+.site-main {
+	font-size: clamp(0.8rem, 1rem, 1.2rem,);
+	@include desktop {
+		margin-left: 5rem;
+		font-size: clamp(1rem, 1.2rem, 1.4rem,);
+	}
+}
+.entry-title a {
+	text-decoration: none;
+	color: rgb(175, 159, 10);
+}
+
+#colophon {
+	background-color: black;
+	color: rgb(224, 203, 8);
+	margin-top: 25px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+}

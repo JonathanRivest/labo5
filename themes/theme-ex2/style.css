@@ -627,6 +627,31 @@ textarea {
   grid-template-areas: "header" "menu" "main" "footer";
 }
 
+.site-main {
+  font-size: clamp(0.8rem, 1rem, 1.2rem);
+}
+
+@media (min-width: 800px) {
+  .site-main {
+    margin-left: 5rem;
+    font-size: clamp(1rem, 1.2rem, 1.4rem);
+  }
+}
+
+.entry-title a {
+  text-decoration: none;
+  color: #af9f0a;
+}
+
+#colophon {
+  background-color: black;
+  color: #e0cb08;
+  margin-top: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -638,11 +663,11 @@ textarea {
 }
 
 .main-navigation ul {
-  display: none;
+  display: block;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: aqua;
+  background-color: black;
 }
 
 .main-navigation ul ul {
@@ -681,23 +706,26 @@ textarea {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  color: #af9f0a;
 }
 
 .menu-toggle {
-  padding: 0;
-  border: 1px solid black;
-  transition: transform 0.3s;
+  padding: 0rem;
+  border: 0;
+  transition: transform 0.2s;
   transform: scale(100%);
 }
 
-.menu-toggle:hover {
-  background-color: grey;
-  border: 1px solid black;
+.menu-toggle:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+.menu-toggle:active {
+  transform: scale(0.99);
 }
 
 .main-navigation.toggled .menu-toggle {
-  background-color: grey;
-  border: 1px solid black;
   transform: scale(75%);
 }
 
@@ -964,4 +992,52 @@ textarea {
 
 /* Local
 --------------------------------------------- */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.site-title {
+  text-align: center;
+  font-size: clamp(3.5rem, 4rem, 4.5rem);
+  animation-name: animFont;
+  animation-duration: 1s;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #af9f0a;
+}
+
+@keyframes animFont {
+  from {
+    font-size: 20%;
+  }
+  to {
+    font-size: clamp(3.5rem, 4rem, 4.5rem);
+  }
+}
+
+body {
+  background-color: #142019;
+  color: white;
+}
+
+body.home::after {
+  width: 100%;
+  height: 110%;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 800px) {
+  body.home::after {
+    background-color: #141414;
+    z-index: -1;
+  }
+}
 /*# sourceMappingURL=style.css.map */

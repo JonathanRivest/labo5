@@ -3,11 +3,11 @@
 	width: 100%;
 
 	ul {
-		display: none;
+		display: block;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		background-color: aqua;
+		background-color: black;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -23,7 +23,6 @@
 			}
 
 			li {
-
 				&:hover > ul,
 				&.focus > ul {
 					display: block;
@@ -61,6 +60,7 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: rgb(175, 159, 10);
 	}
 
 	.current_page_item > a,
@@ -71,21 +71,26 @@
 }
 
 // Menu burger
-.menu-toggle {
-	padding: 0;
-	border: 1px solid black;
-	transition: transform 0.3s;
+.menu-toggle
+{
+	padding: 0rem;
+	border: 0;
+	transition: transform 0.2s;
 	transform: scale(100%);
 }
-.menu-toggle:hover {
-	background-color: grey;
-	border: 1px solid black;
+
+
+.menu-toggle:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.menu-toggle:active {
+    transform: scale(0.99);
 }
 
 .main-navigation.toggled .menu-toggle
 {
-	background-color: grey;
-	border: 1px solid black;
 	transform: scale(75%);
 }
 
