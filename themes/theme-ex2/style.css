@@ -659,15 +659,17 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100%;
+  width: 100vw;
 }
 
 .main-navigation ul {
   display: none;
+  position: absolute;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: black;
+  background-color: #000;
 }
 
 .main-navigation ul ul {
@@ -690,30 +692,54 @@ textarea {
   left: auto;
 }
 
+.main-navigation ul ul li li > a[href="#"]::after {
+  content: "+";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-navigation ul ul li li.focus > a[href="#"]::after,
+.main-navigation ul ul li li > a[href="#"]:hover::after {
+  content: "-";
+}
+
 .main-navigation ul ul a {
   width: 200px;
 }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-  left: auto;
+  left: 0;
 }
 
 .main-navigation li {
   position: relative;
+  flex: 1;
 }
 
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding: .5rem;
   color: #af9f0a;
 }
 
+/* -----------------------------------------------------------------------------
+Bouton burger 
+------------------------------------------------------------------------------*/
 .menu-toggle {
-  padding: 0rem;
+  padding: 0;
   border: 0;
-  transition: transform 0.2s;
-  transform: scale(100%);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background: #fafbfc;
 }
 
 .menu-toggle:focus {
@@ -725,24 +751,39 @@ textarea {
   transform: scale(0.99);
 }
 
-.main-navigation.toggled .menu-toggle {
-  transform: scale(75%);
+/*
+.main-navigation.toggled .menu-toggle{
+	transform : rotate(90deg);
 }
-
-/* Small menu. */
+*/
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
+/* ---------------------------------------------------------------------------
+menu tablet
+------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
   }
+  .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
-    height: 2rem;
+    position: static;
     justify-content: space-around;
+    width: 100vw;
+  }
+  .main-navigation.toggled ul ul,
+  .main-navigation ul ul {
+    position: absolute;
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 
