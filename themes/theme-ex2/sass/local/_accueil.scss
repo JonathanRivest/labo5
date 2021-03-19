@@ -50,7 +50,7 @@ body.home::after {
     flex-direction: column;
     section {
 display: flex;
-flex-direction: row;
+flex-direction: column;
 flex-wrap: wrap;
 
     
@@ -60,16 +60,24 @@ flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    width: 60%; // À changer dans les querys
+    width: 100%; // À changer dans les querys
     border: 1px solid #aaa; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     p {
-        font-size: .7rem;
+        font-size: .9rem;
         font-weight: bold;
     }
     a {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
         text-decoration: none;
+        color: rgb(175, 159, 10);
+    }
+    a:hover {
+        color: rgb(117, 106, 8);
     }
     }
 }

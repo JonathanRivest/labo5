@@ -633,7 +633,8 @@ textarea {
 
 @media (min-width: 800px) {
   .site-main {
-    margin-left: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     font-size: clamp(1rem, 1.2rem, 1.4rem);
   }
 }
@@ -1093,7 +1094,7 @@ body.home::after {
 
 .liste-cours section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -1103,18 +1104,27 @@ body.home::after {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 60%;
+  width: 100%;
   border: 1px solid #aaa;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .liste-cours section article p {
-  font-size: .7rem;
+  font-size: .9rem;
   font-weight: bold;
 }
 
 .liste-cours section article a {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-decoration: none;
+  color: #af9f0a;
+}
+
+.liste-cours section article a:hover {
+  color: #756a08;
 }
 /*# sourceMappingURL=style.css.map */

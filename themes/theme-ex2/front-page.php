@@ -41,11 +41,11 @@ get_header();
                 <section>
 				<?php endif
 				?>
-				<h2> <?php echo $typecours; ?> <h2>
+				<h2><?php echo $typecours; ?><h2>
 				<article>
 				<p> <?php echo $sigle .  " - " . $nbHeure . " - " . $typecours; ?></p>
 				<a href = "<?php echo get_permalink(); ?>"><?php echo $titre; ?></a>
-				<p> <?php echo $session; ?></p>
+				<p> Session: <?php echo $session; ?></p>
 				</article>
 				<?php
 				$precedent = $typecours;
