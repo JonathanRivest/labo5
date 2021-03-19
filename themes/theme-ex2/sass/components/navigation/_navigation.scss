@@ -106,13 +106,14 @@ Bouton burger
 ------------------------------------------------------------------------------*/
 .menu-toggle {
 	padding :0;
-//	transition : transform .25s;
-//	transform : rotate(0deg);
-	border : 0;
+	transition : transform .25s;
+	transform : rotate(360deg);
+	border : 1px solid rgb(73, 72, 57);
+	background-color: rgb(33, 33, 49);
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-    background: #fafbfc;
+    background-color: rgb(33, 33, 49);
 }
 
 .menu-toggle:focus {
@@ -122,13 +123,14 @@ Bouton burger
 
 .menu-toggle:active {
     transform: scale(0.99);
+	background-color: rgb(16, 16, 24);
 }
 
-/*
+
 .main-navigation.toggled .menu-toggle{
-	transform : rotate(90deg);
+	transform : rotate(-180deg);
 }
-*/
+
 
 .menu-toggle,
 .main-navigation.toggled ul {
