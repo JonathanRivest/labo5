@@ -12,6 +12,30 @@ get_header();
 /////////////// FRONT-PAGE.PHP
 	<main id="primary" class="site-main">
 
+	<section class="carrousel"> 
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		</section>
+		<button id="un">1</button>
+		<button id="deux">2</button>
+		<button id="trois">3</button>
+		<script>
+		let bout1 = document.getElementById('un');
+		let bout2 = document.getElementById('deux');
+		let bout3 = document.getElementById('trois');
+		bout1.addEventListener('mousedown', function() {
+
+		});
+		bout2.addEventListener('mousedown', function() {
+			
+		});
+		bout3.addEventListener('mousedown', function() {
+			
+		});
+
+		</script>
+
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -20,6 +44,7 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+
 
            <section class = "liste-cours">
 			<?php
