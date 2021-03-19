@@ -1116,7 +1116,6 @@ body.home::after {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
   width: 100%;
   border: 1px solid #aaa;
   padding-left: 30px;
@@ -1130,11 +1129,37 @@ body.home::after {
   font-weight: bold;
 }
 
+@media (min-width: 500px) {
+  .liste-cours section article p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 800px) {
+  .liste-cours section article p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
 .liste-cours section article a {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   color: #af9f0a;
+}
+
+@media (min-width: 500px) {
+  .liste-cours section article a {
+    font-size: 2.0rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .liste-cours section article a {
+    font-size: 3rem;
+  }
 }
 
 .liste-cours section article a:hover {

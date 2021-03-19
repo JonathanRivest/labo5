@@ -15,3 +15,10 @@
 		@content;
 	}
 }
+@mixin medium { //Affichage écrans moyens (tablettes)
+	@media (min-width: 500px) {
+		@content;
+	}
+}
+
+
