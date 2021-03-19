@@ -633,8 +633,8 @@ textarea {
 
 @media (min-width: 800px) {
   .site-main {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     font-size: clamp(1rem, 1.2rem, 1.4rem);
   }
 }

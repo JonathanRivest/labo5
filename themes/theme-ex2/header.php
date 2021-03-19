@@ -54,6 +54,18 @@
 		<button id="trois">3</button>
 		<script>
 		let bout1 = document.getElementById('un');
+		let bout2 = document.getElementById('deux');
+		let bout3 = document.getElementById('trois');
+		bout1.addEventListener('mousedown', function() {
+
+		});
+		bout2.addEventListener('mousedown', function() {
+			
+		});
+		bout3.addEventListener('mousedown', function() {
+			
+		});
+
 		</script>
 
 		<nav id="site-navigation" class="main-navigation">
