@@ -637,8 +637,6 @@ body {
 
 @media (min-width: 800px) {
   .site-main {
-    margin-left: 5rem;
-    margin-right: 5rem;
     font-size: clamp(1rem, 1.2rem, 1.4rem);
   }
 }
@@ -1091,6 +1089,17 @@ body.home::after {
   }
 }
 
+#boutonsCarrousel {
+  text-align: center;
+}
+
+#un, #deux, #trois {
+  background-color: #212131;
+  color: #af9f0a;
+  border: 1px solid #494839;
+  margin-top: 10px;
+}
+
 .liste-cours {
   display: flex;
   flex-direction: column;
@@ -1137,19 +1146,19 @@ body.home::after {
 .carrousel {
   display: flex;
   width: 300vw;
-  height: 20vh;
+  height: 60vh;
+  transition: transform .5s;
 }
 
 .carrousel div {
-  width: 88vw;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .carrousel div:nth-of-type(1) {
-  background-color: #aab399;
-  margin-right: 5rem;
+  background-color: #60615f;
 }
 
 .carrousel div:nth-of-type(2) {
@@ -1157,6 +1166,6 @@ body.home::after {
 }
 
 .carrousel div:nth-of-type(3) {
-  background-color: #aab399;
+  background-color: #424242;
 }
 /*# sourceMappingURL=style.css.map */

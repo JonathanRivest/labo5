@@ -9,7 +9,6 @@
 
 get_header();
 ?>
-/////////////// FRONT-PAGE.PHP
 	<main id="primary" class="site-main">
 
 	<section class="carrousel"> 
@@ -17,24 +16,12 @@ get_header();
 		<div>2</div>
 		<div>3</div>
 		</section>
+		<section id="boutonsCarrousel">
 		<button id="un">1</button>
 		<button id="deux">2</button>
 		<button id="trois">3</button>
-		<script>
-		let bout1 = document.getElementById('un');
-		let bout2 = document.getElementById('deux');
-		let bout3 = document.getElementById('trois');
-		bout1.addEventListener('mousedown', function() {
-
-		});
-		bout2.addEventListener('mousedown', function() {
-			
-		});
-		bout3.addEventListener('mousedown', function() {
-			
-		});
-
-		</script>
+</section>
+		
 
 		<?php if ( have_posts() ) : ?>
 

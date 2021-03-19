@@ -45,9 +45,18 @@ body.home::after {
         z-index: -1;
     }
 }
+#boutonsCarrousel {
+    text-align: center;
+}
+#un, #deux, #trois { //Boutons du carrousel
+    background-color: rgb(33, 33, 49);
+    color: rgb(175, 159, 10);
+    border: 1px solid rgb(73, 72, 57);
+    margin-top: 10px;
+}
 .liste-cours {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; //Affichage sur la verticale
     section {
 display: flex;
 flex-direction: column;

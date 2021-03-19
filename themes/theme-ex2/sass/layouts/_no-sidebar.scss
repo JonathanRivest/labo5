@@ -17,9 +17,7 @@ body {
 
 .site-main {
 	font-size: clamp(0.8rem, 1rem, 1.2rem,);
-	@include desktop {
-		margin-left: 5rem;
-		margin-right: 5rem; // Sert à centrer le contenu de la page
+	@include desktop {// Sert à centrer le contenu de la page
 		font-size: clamp(1rem, 1.2rem, 1.4rem,);
 	}
 }
