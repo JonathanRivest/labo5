@@ -106,7 +106,7 @@ Bouton burger
 ------------------------------------------------------------------------------*/
 .menu-toggle {
 	padding :0;
-	transition : transform .25s;
+	transition : transform .25s; //Animation au clic du bouton burger
 	transform : rotate(360deg);
 	border : 1px solid rgb(73, 72, 57);
 	background-color: rgb(33, 33, 49);
@@ -141,7 +141,7 @@ menu tablet
 ------------------------------------------------------------------------------ */
 @media screen and (min-width: 37.5em) {
 
-	.menu-toggle {
+	.menu-toggle { // Bouton burger disparait sur tablette et ordinateur
 		display: none;
 	}
 	.main-navigation.toggled ul,

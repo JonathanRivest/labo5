@@ -11,13 +11,13 @@ body {
 			"header"
 			"menu"
 			"main"
-			"footer";
+			"footer"; //Affichage de base du site
 	}
 }
 
 .site-main {
 	font-size: clamp(0.8rem, 1rem, 1.2rem,);
-	@include desktop {// Sert à centrer le contenu de la page
+	@include desktop {// Sert à centrer le contenu de la page. Voir mixins pour paramètres du query
 		font-size: clamp(1rem, 1.2rem, 1.4rem,);
 	}
 }

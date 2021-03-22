@@ -68,11 +68,11 @@ body.home::after {
 #trois:active {
     background-color: rgb(0, 0, 0);
     transform: scale(0.75);
-    transition : transform .05s;
+    transition : transform .05s; // Les boutons du slider s'animent au clic
 }
 .liste-cours {
     display: flex;
-    flex-direction: column; //Affichage sur la verticale
+    flex-direction: column; //Affichage sur la verticale de la section
     section {
 display: flex;
 flex-direction: column;
