@@ -54,6 +54,22 @@ body.home::after {
     border: 1px solid rgb(73, 72, 57);
     margin-top: 10px;
 }
+
+#un:active {
+    background-color: rgb(0, 0, 0);
+    transform: scale(0.75);
+    transition : transform .05s;
+}
+#deux:active {
+    background-color: rgb(0, 0, 0);
+    transform: scale(0.75);
+    transition : transform .05s;
+}
+#trois:active {
+    background-color: rgb(0, 0, 0);
+    transform: scale(0.75);
+    transition : transform .05s;
+}
 .liste-cours {
     display: flex;
     flex-direction: column; //Affichage sur la verticale
@@ -70,6 +86,7 @@ flex-wrap: wrap;
     align-items: center;
     width: 100%; // À changer dans les querys
     border: 1px solid #aaa; 
+    background-color: rgb(29, 29, 36);
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 40px;

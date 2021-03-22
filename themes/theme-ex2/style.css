@@ -1108,6 +1108,24 @@ body.home::after {
   margin-top: 10px;
 }
 
+#un:active {
+  background-color: black;
+  transform: scale(0.75);
+  transition: transform .05s;
+}
+
+#deux:active {
+  background-color: black;
+  transform: scale(0.75);
+  transition: transform .05s;
+}
+
+#trois:active {
+  background-color: black;
+  transform: scale(0.75);
+  transition: transform .05s;
+}
+
 .liste-cours {
   display: flex;
   flex-direction: column;
@@ -1126,6 +1144,7 @@ body.home::after {
   align-items: center;
   width: 100%;
   border: 1px solid #aaa;
+  background-color: #1d1d24;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 40px;
