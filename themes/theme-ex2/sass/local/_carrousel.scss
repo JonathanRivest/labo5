@@ -1,13 +1,22 @@
 .carrousel {
     display: flex;
     width: 300vw;
-    height: 60vh;
+    height: 50vh;
     transition: transform .5s;
-    div {
+
+    .slide__conteneur {
      width: 100vw;
      display: flex;
      align-items: center;
      justify-content: center;
+
+    
+    .slide {
+     width: 90%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     
     
     &:nth-of-type(1) { //Sections du carrousel
         background-color: rgb(96, 97, 95);
@@ -18,5 +27,31 @@
     &:nth-of-type(3) {
         background-color: rgb(66, 66, 66);
     }
+    img {
+        display: block;
+        margin: 2%;
+    }
+    .slide__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+        p {
+            font-size: .8rem;
+        }
+        a {
+            font-size: 1.5rem;
+        }
+    }
 }
+}
+}
+
+#boutonsCarrousel {
+    display: flex;
+    justify-content: center;
+    input {
+        margin: 2rem;
+    }
 }

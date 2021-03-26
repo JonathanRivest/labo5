@@ -1,15 +1,15 @@
     (function(){
-         let bout1 = document.getElementById('un');
-		let bout2 = document.getElementById('deux');
-		let bout3 = document.getElementById('trois');
+         
+		let bout = document.querySelectorAll('.boutonsCarrousel input');
 		let carrousel = document.querySelector('.carrousel')
-		bout1.addEventListener('mousedown', function() {
-             carrousel.style.transform = "translateX(0vw)";
-		});
-		bout2.addEventListener('mousedown', function() {
-			carrousel.style.transform = "translateX(-100vw)";
-		});
-		bout3.addEventListener('mousedown', function() {
-			carrousel.style.transform = "translateX(-200vw)";
-		});
+		let noBouton = 0;
+		bout[0].checked = true;
+
+        for (const bt of bout) {
+			bt.value = noBouton++;
+			bt.addEventListener('mousedown', function() {
+				carrousel.style.transform = "translateX(" + (-this.value * 100) + "vw)"
+		   })
+		}
+
     }())
